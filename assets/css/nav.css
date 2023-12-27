@@ -13,6 +13,59 @@
     transition: all 0.3s ease;
 }
 
+.search{
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    border-radius: 4px;
+
+    }
+
+    .search input{
+
+     height: 50px;
+     text-indent: 25px;
+     border: 2px solid #d6d4d4;
+     border-radius: 4px;
+     
+
+    }
+
+    .search input:focus {
+        
+    border: double 2px transparent;
+    border-radius: 4px;
+    background-image: linear-gradient(white, white), 
+                    linear-gradient(45deg, #FF5934, #6C34FF);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+    .search .fa-search{
+
+     position: absolute;
+     top: 20px;
+     left: 16px;
+
+    }
+
+    .search button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 40px;
+        width: 110px;
+        background: rgb(167, 167, 233);
+        border-radius: 4px;
+        border: 0px solid transparent; /* 设置为透明以准备渐变 */
+        background-clip: padding-box; /* 防止背景遮盖边框 */
+    }
+    
+    /* 搜索按钮鼠标悬停时的样式 */
+    .search button:hover {
+        background: linear-gradient(45deg, #FF5934, #6C34FF);
+        color: white; /* 可以根据需要更改文字颜色 */
+    }
+
 .box2:hover {
     transform: translateY(-6px);
     -webkit-transform: translateY(-6px);
